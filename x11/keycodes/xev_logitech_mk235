@@ -1,0 +1,139 @@
+default xkb_keycodes "xev_logitech_mk235" {
+    minimum = 8;
+    maximum = 255;
+
+    // Function Row
+    alias <FR01> = <ESC>;
+    alias <FR02> = <FK01>;
+    alias <FR03> = <FK02>;
+    alias <FR04> = <FK03>;
+    alias <FR05> = <FK04>;
+    alias <FR06> = <FK05>;
+    alias <FR07> = <FK06>;
+    alias <FR08> = <FK07>;
+    alias <FR09> = <FK08>;
+    alias <FR10> = <FK09>;
+    alias <FR11> = <FK10>;
+    alias <FR12> = <FK11>;
+    alias <FR13> = <FK12>;
+
+    // Number Row
+    alias <NR01> = <TLDE>;
+    alias <NR02> = <NUM1>;
+    alias <NR03> = <NUM2>;
+    alias <NR04> = <NUM3>;
+    alias <NR05> = <NUM4>;
+    alias <NR06> = <NUM5>;
+    alias <NR07> = <NUM6>;
+    alias <NR08> = <NUM7>;
+    alias <NR09> = <NUM8>;
+    alias <NR10> = <NUM9>;
+    alias <NR11> = <NUM0>;
+    alias <NR12> = <MINS>;
+    alias <NR13> = <EQUL>;
+    alias <NR14> = <BKSP>;
+
+    // Top Row
+    alias <TR01> = <TAB>;
+    alias <TR02> = <AL01>;
+    alias <TR03> = <AL02>;
+    alias <TR04> = <AL03>;
+    alias <TR05> = <AL04>;
+    alias <TR06> = <AL05>;
+    alias <TR07> = <AL06>;
+    alias <TR08> = <AL07>;
+    alias <TR09> = <AL08>;
+    alias <TR10> = <AL09>;
+    alias <TR11> = <AL10>;
+    alias <TR12> = <BRLF>;
+    alias <TR13> = <BRRG>;
+
+    // Home Row
+    alias <HR01> = <CAPS>;
+    alias <HR02> = <AL11>;
+    alias <HR03> = <AL12>;
+    alias <HR04> = <AL13>;
+    alias <HR05> = <AL14>;
+    alias <HR06> = <AL15>;
+    alias <HR07> = <AL16>;
+    alias <HR08> = <AL17>;
+    alias <HR09> = <AL18>;
+    alias <HR10> = <AL19>;
+    alias <HR11> = <SEMC>;
+    alias <HR12> = <APOS>;
+    alias <HR13> = <BKSL>;
+    alias <HR14> = <RTRN>;
+
+    // Bottom Row
+    alias <BR01> = <SHRG>;
+    alias <BR02> = <COMP>;
+    alias <BR03> = <AL20>;
+    alias <BR04> = <AL21>;
+    alias <BR05> = <AL22>;
+    alias <BR06> = <AL23>;
+    alias <BR07> = <AL24>;
+    alias <BR08> = <AL25>;
+    alias <BR09> = <AL26>;
+    alias <BR10> = <COMA>;
+    alias <BR11> = <STOP>;
+    alias <BR12> = <SLSH>;
+    alias <BR13> = <SHLF>;
+
+    // Control Row
+    alias <CR01> = <CTRG>;
+    alias <CR02> = <SUPR>;
+    alias <CR03> = <ALRG>;
+    alias <CR04> = <SPCE>;
+    alias <CR05> = <ALLF>;
+    alias <CR06> = <CTLF>;
+
+    // Arrow Keys
+    alias <AK01> = <UPAR>;  // Up
+    alias <AK02> = <LFAR>;  // Left
+    alias <AK03> = <DNAR>;  // Down
+    alias <AK04> = <RGAR>;  // Right
+
+    // Nav Cluster
+    alias <NV01> = <INS>;
+    alias <NV02> = <HOME>;
+    alias <NV03> = <PGUP>;
+    alias <NV04> = <DELE>;
+    alias <NV05> = <END>;
+    alias <NV06> = <PGDN>;
+
+    // Num Pad
+    alias <NP01> = <NUML>;
+    alias <NP02> = <NDIV>;
+    alias <NP03> = <NMUL>;
+    alias <NP04> = <NSUM>;
+    alias <NP05> = <NADD>;
+    alias <NP06> = <NENT>;
+    alias <NP07> = <NUM1>;
+    alias <NP08> = <NUM2>;
+    alias <NP09> = <NUM3>;
+    alias <NP10> = <NUM4>;
+    alias <NP11> = <NUM5>;
+    alias <NP12> = <NUM6>;
+    alias <NP13> = <NUM7>;
+    alias <NP14> = <NUM8>;
+    alias <NP15> = <NUM9>;
+    alias <NP16> = <NUM0>;
+    alias <NP17> = <NDOT>;
+
+    // Fn layer
+    alias <FL01> = <HMPG>;  // F1
+    alias <FL02> = <MAIL>;  // F2
+    alias <FL03> = <SRCH>;  // F3
+    alias <FL04> = <CALC>;  // F4
+    alias <FL05> = <CONF>;  // F5
+    alias <FL06> = <PRSG>;  // F6
+    alias <FL07> = <PLSG>;  // F7
+    alias <FL08> = <NXSG>;  // F8
+    alias <FL09> = <MUTE>;  // F9
+    alias <FL10> = <VOL->;  // F10
+    alias <FL11> = <VOL+>;  // F11
+    alias <FL12> = <PRSC>;  // F12
+    alias <FL13> = <SCRL>;  // INS
+    alias <FL14> = <PABR>;  // DELE
+    alias <FL15> = <MENU>;  // RCTL
+};  // vim:ft=c

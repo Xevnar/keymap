@@ -1,0 +1,22 @@
+default xkb_keycodes "xev_numpad" {
+    minimum = 8;
+    maximum = 255;
+
+    <NUML> = 77;
+    <NDIV> = 106;
+    <NMUL> = 63;
+    <NUM1> = 79;
+    <NUM2> = 80;
+    <NUM3> = 81;
+    <NUM4> = 83;
+    <NUM5> = 84;
+    <NUM6> = 85;
+    <NUM7> = 87;
+    <NUM8> = 88;
+    <NUM9> = 89;
+    <NUM0> = 90;
+    <NDOT> = 91;
+    <NSUB> = 82;
+    <NADD> = 86;
+    <NENT> = 104;
+}; // vim:ft=c

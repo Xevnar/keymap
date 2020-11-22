@@ -1,0 +1,125 @@
+default xkb_keycodes "xev_basic" {
+    minimum = 8;
+    maximum = 255;
+
+    // Function Row
+    <ESC>  = 9;
+    <FK01> = 67;
+    <FK02> = 68;
+    <FK03> = 69;
+    <FK04> = 70;
+    <FK05> = 71;
+    <FK06> = 72;
+    <FK07> = 73;
+    <FK08> = 74;
+    <FK09> = 75;
+    <FK10> = 76;
+    <FK11> = 95;
+    <FK12> = 96;
+
+    // Number Row
+    <TLDE> = 49;
+    <NUM1> = 10;
+    <NUM2> = 11;
+    <NUM3> = 12;
+    <NUM4> = 13;
+    <NUM5> = 14;
+    <NUM6> = 15;
+    <NUM7> = 16;
+    <NUM8> = 17;
+    <NUM9> = 18;
+    <NUM0> = 19;
+    <MINS> = 20;
+    <EQUL> = 21;
+    <BKSP> = 22;
+
+    // Top Row
+    <TAB>  = 23;
+    <AL01> = 24;
+    <AL02> = 25;
+    <AL03> = 26;
+    <AL04> = 27;
+    <AL05> = 28;
+    <AL06> = 29;
+    <AL07> = 30;
+    <AL08> = 31;
+    <AL09> = 32;
+    <AL10> = 33;
+    <BRLF> = 34;
+    <BRRT> = 35;
+
+    // Home Row
+    <CAPS> = 66;
+    <AL11> = 38;
+    <AL12> = 39;
+    <AL13> = 40;
+    <AL14> = 41;
+    <AL15> = 42;
+    <AL16> = 43;
+    <AL17> = 44;
+    <AL18> = 45;
+    <AL19> = 46;
+    <SEMC> = 47;
+    <APOS> = 48;
+    <RTRN> = 36;
+
+    // Bottom Row
+    <RTSH> = 50;
+    <AL20> = 52;
+    <AL21> = 53;
+    <AL22> = 54;
+    <AL23> = 55;
+    <AL24> = 56;
+    <AL25> = 57;
+    <AL26> = 58;
+    <COMA> = 59;
+    <STOP> = 60;
+    <SLSH> = 61;
+    <LFSH> = 62;
+
+    // Control Row
+    <LCTL> = 37;
+    <SUPR> = 133;
+    <LALT> = 64;
+    <SPCE> = 65;
+    <RALT> = 108;
+    <RCTL> = 105;
+
+    // Arrow Keys
+    <UPAR> = 111;   // Up
+    <LFAR> = 113;   // Left
+    <DNAR> = 116;   // Down
+    <RTAR> = 114;   // Right
+
+    // Keyboard specific keys
+    <BKSL> = 51;    // Backslash
+    <SCLK> = 78;    // Scroll lock
+    <COMP> = 94;    // Compose
+    <PRSC> = 107;   // Printscreen
+    <HOME> = 110;   // Home
+    <END>  = 115;   // End
+    <PGUP> = 112;   // Page up
+    <PGDN> = 117;   // Page down
+    <INS>  = 118;   // Insert
+    <DELE> = 119;   // Delete
+	<MUTE> = 121;   // Mute
+	<VOL-> = 122;   // Decrease volume
+	<VOL+> = 123;   // Increase volume
+    <PAUS> = 127;   // Pause break
+    <MENU> = 135;   // Menu
+	<CALC> = 148;   // KEY_CALC
+	<MAIL> = 163;   // KEY_MAIL
+	<NXSG> = 171;	// KEY_NEXTSONG
+	<PLSG> = 172;	// KEY_PLAYPAUSE
+	<PRSG> = 173;	// KEY_PREVIOUSSONG
+	<CONF> = 179;   // KEY_CONFIG
+	<HMPG> = 180;   // KEY_HOMEPAGE
+	<MIC>  = 198;   // Disable Mic
+	<ETCH> = 200;   // Turn on touchpad
+	<DTCH> = 201;   // Turn off touchpad
+	<CAM>  = 220;	// KEY_CAMERA
+	<SRCH> = 225;   // KEY_SEARCH
+	<BRI-> = 232;	// KEY_BRIGHTNESSDOWN
+	<BRI+> = 233;	// KEY_BRIGHTNESSUP
+	<AIRP> = 255;	// KEY_RFKILL
+};  // vim:ft=c
