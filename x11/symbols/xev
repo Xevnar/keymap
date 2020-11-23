@@ -99,19 +99,21 @@ xkb_symbols "logitech_mk235"{
 
       // Fn Layer
       key.type = "ONE_LEVEL";
-      key <FN01> { [   voidSymbol ] };
-      key <FN02> { [   voidSymbol ] };
-      key <FN03> { [   voidSymbol ] };
-      key <FN04> { [   voidSymbol ] };
-      key <FN05> { [   voidSymbol ] };
-      key <FN06> { [   voidSymbol ] };
-      key <FN07> { [   voidSymbol ] };
-      key <FN08> { [   voidSymbol ] };
-      key <FN09> { [   voidSymbol ] };
-      key <FN10> { [   voidSymbol ] };
-      key <FN11> { [   voidSymbol ] };
-      key <FN12> { [   voidSymbol ] };
-      key <FN13> { [   voidSymbol ] };
+      key <FL01> { [   voidSymbol ] };
+      key <FL02> { [   voidSymbol ] };
+      key <FL03> { [   voidSymbol ] };
+      key <FL04> { [   voidSymbol ] };
+      key <FL05> { [   voidSymbol ] };
+      key <FL06> { [   voidSymbol ] };
+      key <FL07> { [   voidSymbol ] };
+      key <FL08> { [   voidSymbol ] };
+      key <FL09> { [   voidSymbol ] };
+      key <FL10> { [   voidSymbol ] };
+      key <FL11> { [   voidSymbol ] };
+      key <FL12> { [   voidSymbol ] };
+      key <FL13> { [   voidSymbol ] };
+      key <FL14> { [   voidSymbol ] };
+      key <FL15> { [   voidSymbol ] };
 
       // Undefined keycodes
       key.type = "ONE_LEVEL";
@@ -222,20 +224,20 @@ xkb_symbols "lenovo_yoga"{
 
       // Fn Layer
       key.type = "ONE_LEVEL";
-      key <FN01> { [   voidSymbol ] };
-      key <FN02> { [   voidSymbol ] };
-      key <FN03> { [   voidSymbol ] };
-      key <FN04> { [   voidSymbol ] };
-      key <FN05> { [   voidSymbol ] };
-      key <FN06> { [   voidSymbol ] };
-      key <FN07> { [   voidSymbol ] };
-      key <FN08> { [   voidSymbol ] };
-      key <FN09> { [   voidSymbol ] };
-      key <FN10> { [   voidSymbol ] };
-      key <FN11> { [   voidSymbol ] };
-      key <FN12> { [   voidSymbol ] };
-      key <FN13> { [   voidSymbol ] };
-      key <FN14> { [   voidSymbol ] };
+      key <FL01> { [   voidSymbol ] };
+      key <FL02> { [   voidSymbol ] };
+      key <FL03> { [   voidSymbol ] };
+      key <FL04> { [   voidSymbol ] };
+      key <FL05> { [   voidSymbol ] };
+      key <FL06> { [   voidSymbol ] };
+      key <FL07> { [   voidSymbol ] };
+      key <FL08> { [   voidSymbol ] };
+      key <FL09> { [   voidSymbol ] };
+      key <FL10> { [   voidSymbol ] };
+      key <FL11> { [   voidSymbol ] };
+      key <FL12> { [   voidSymbol ] };
+      key <FL13> { [   voidSymbol ] };
+      key <FL14> { [   voidSymbol ] };
 
       // Undefined keycodes
       key.type = "ONE_LEVEL";
