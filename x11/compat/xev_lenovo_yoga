@@ -1,6 +1,0 @@
-xkb_compatibility "xev_lenovo_yoga" {
-    include "xev_mods"
-    include "xev_latches"
-    include "xev_server"
-    include "xev_repeat_bs"
-};  // vim:ft=c

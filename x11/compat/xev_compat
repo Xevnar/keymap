@@ -1,4 +1,4 @@
-xkb_compatibility "xev_logitech_mk235" {
+xkb_compatibility "xev_compat" {
     include "xev_mods"
     include "xev_latches"
     include "xev_server"
