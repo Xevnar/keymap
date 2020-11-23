@@ -14,21 +14,21 @@ xkb_types "xev_complete" {
     };
 
     type "THREE_LEVEL" {
-        modifiers= Shift+Meta;
+        modifiers= Shift+Mod3;
         map[Shift]= Level2;
-        map[Meta]= Level3;
-        map[Shift+Meta]= Level3;
+        map[Mod3]= Level3;
+        map[Shift+Mod3]= Level3;
         level_name[Level1]= "Base";
         level_name[Level2]= "Shift";
         level_name[Level3]= "Num";
     };
 
     type "X_LEVEL" {
-        modifiers= Control+Shift+Meta;
+        modifiers= Control+Shift+Mod3;
         map[Control]= Level1;
         map[Shift]= Level2;
-        map[Meta]= Level3;
-        map[Control+Meta]= Level4;
+        map[Mod3]= Level3;
+        map[Control+Mod3]= Level4;
         level_name[Level1]= "Base";
         level_name[Level2]= "Shift";
         level_name[Level3]= "Num";
