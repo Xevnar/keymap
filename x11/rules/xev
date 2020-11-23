@@ -1,0 +1,20 @@
+! model           = keycodes
+  logitech_mk235  = xev_logitech_mk235
+  lenovo_yoga     = xev_lenovo_yoga
+  *               = evdev
+
+! model           = types
+  logitech_mk235  = xev_types
+  lenovo_yoga     = xev_types
+  *               = complete
+
+! model           = compat
+  logitech_mk235  = xev_compat
+  lenovo_yoga     = xev_compat
+  *               = complete
+
+! model = symbols
+  *     = %l
+
+! model = geometry
+  *     = pc(pc105)
