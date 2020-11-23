@@ -49,7 +49,7 @@ default xkb_keycodes "xev_lenovo_yoga" {
     alias <TR10> = <AL09>;
     alias <TR11> = <AL10>;
     alias <TR12> = <BRLF>;
-    alias <TR13> = <BRRG>;
+    alias <TR13> = <BRRT>;
     alias <TR14> = <BKSL>;
 
     // Home Row
@@ -68,7 +68,7 @@ default xkb_keycodes "xev_lenovo_yoga" {
     alias <HR13> = <RTRN>;
 
     // Bottom Row
-    alias <BR01> = <SHRG>;
+    alias <BR01> = <RTSH>;
     alias <BR02> = <AL20>;
     alias <BR03> = <AL21>;
     alias <BR04> = <AL22>;
@@ -79,26 +79,26 @@ default xkb_keycodes "xev_lenovo_yoga" {
     alias <BR09> = <COMA>;
     alias <BR10> = <STOP>;
     alias <BR11> = <SLSH>;
-    alias <BR12> = <SHLF>;
+    alias <BR12> = <LFSH>;
 
     // Control Row
-    alias <CR01> = <CTRG>;
+    alias <CR01> = <LCTL>;
     alias <CR02> = <SUPR>;
-    alias <CR03> = <ALRG>;
+    alias <CR03> = <LALT>;
     alias <CR04> = <SPCE>;
-    alias <CR05> = <ALLF>;
-    alias <CR06> = <CTLF>;
+    alias <CR05> = <RALT>;
+    alias <CR06> = <RCTL>;
 
     // Arrow Keys
     alias <AK01> = <UPAR>;  // Up
     alias <AK02> = <LFAR>;  // Left
     alias <AK03> = <DNAR>;  // Down
-    alias <AK04> = <RGAR>;  // Right
+    alias <AK04> = <RTAR>;  // Right
 
     // Fn layer
-    alias <FL01> = <mute>;  // F1
-    alias <FL02> = <vol->;  // F2
-    alias <FL03> = <vol+>;  // F3
+    alias <FL01> = <MUTE>;  // F1
+    alias <FL02> = <VOL->;  // F2
+    alias <FL03> = <VOL+>;  // F3
     alias <FL04> = <MIC>;   // F4
     alias <FL05> = <ETCH>;  // F6
     alias <FL06> = <DTCH>;  // F6
