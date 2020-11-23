@@ -6,13 +6,6 @@ xkb_symbols "xev_num"{
 
     name[Group1] = "dvorak";
 
-    // Arrow keys
-    key.type = "THREE_LEVEL";
-    key <AK01> { [           Up,     Page_Up,       Page_Up ] };
-    key <AK02> { [         Left,        Home,          Home ] };
-    key <AK03> { [         Down,   Page_Down,     Page_Down ] };
-    key <AK04> { [        Right,         End,           End ] };
-
     // Nav Cluster
     key.type = "ONE_LEVEL";
     key <NV01> { [   voidSymbol ] };
