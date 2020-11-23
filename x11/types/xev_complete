@@ -1,13 +1,14 @@
+default
 xkb_types "xev_complete" {
-    virtual_modifiers Alt,Meta,Super;
-
     type "ONE_LEVEL" {
-        modifiers= none;
-        level_name[Level1]= "Base";
+	    modifiers = None;
+	    map[None] = Level1;
+	    level_name[Level1]= "Any";
     };
 
     type "TWO_LEVEL" {
         modifiers= Shift;
+        map[None] = Level1;
         map[Shift]= Level2;
         level_name[Level1]= "Base";
         level_name[Level2]= "Shift";
@@ -15,6 +16,7 @@ xkb_types "xev_complete" {
 
     type "THREE_LEVEL" {
         modifiers= Shift+Mod3;
+        map[None] = Level1;
         map[Shift]= Level2;
         map[Mod3]= Level3;
         map[Shift+Mod3]= Level3;
@@ -25,6 +27,7 @@ xkb_types "xev_complete" {
 
     type "X_LEVEL" {
         modifiers= Control+Shift+Mod3;
+        map[None] = Level1;
         map[Control]= Level1;
         map[Shift]= Level2;
         map[Mod3]= Level3;

@@ -1,6 +1,4 @@
 xkb_compatibility "xev_latches" {
-    virtual_modifiers Meta,Super;
-
     interpret.useModMapMods = AnyLevel;
     interpret.repeat = False;
     interpret.locking = False;
@@ -14,20 +12,18 @@ xkb_compatibility "xev_latches" {
     };
 
     interpret Meta_L+AnyOf(all) {
-        virtualModifier= Meta;
-        action = LatchMods(modifiers = Meta, clearLocks, latchToLock);
+        action = LatchMods(modifiers = Mod3, clearLocks, latchToLock);
     };
 
     interpret Meta_L+AnyOfOrNone(all) {
-        action = LatchMods(modifiers = Meta, clearLocks, latchToLock);
+        action = LatchMods(modifiers = Mod3, clearLocks, latchToLock);
     };
 
     interpret Super_L+AnyOf(all) {
-        virtualModifier= Super;
-        action = LatchMods(modifiers = Super, clearLocks, latchToLock);
+        action = LatchMods(modifiers = Mod4, clearLocks, latchToLock);
     };
 
     interpret Super_L+AnyOfOrNone(all) {
-        action = LatchMods(modifiers = Super, clearLocks, latchToLock);
+        action = LatchMods(modifiers = Mod4, clearLocks, latchToLock);
     };
 };  // vim:ft=c
