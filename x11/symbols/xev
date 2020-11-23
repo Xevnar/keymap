@@ -97,13 +97,6 @@ xkb_symbols "logitech_mk235"{
       key <CR05> { [        Alt_R ],   virtualMods= Alt };
       key <CR06> { [    Control_R ] };
 
-      // Arrow keys
-      key.type = "THREE_LEVEL";
-      key <AK01> { [           Up,     Page_Up,       Page_Up ] };
-      key <AK02> { [         Left,        Home,          Home ] };
-      key <AK03> { [         Down,   Page_Down,     Page_Down ] };
-      key <AK04> { [        Right,         End,           End ] };
-
       // Fn Layer
       key.type = "ONE_LEVEL";
       key <FN01> { [   voidSymbol ] };
@@ -226,13 +219,6 @@ xkb_symbols "lenovo_yoga"{
       key <CR04> { [        space ] };
       key <CR05> { [        Alt_R ],   virtualMods= Alt };
       key <CR06> { [    Control_R ] };
-
-      // Arrow keys
-      key.type = "THREE_LEVEL";
-      key <AK01> { [           Up,     Page_Up,       Page_Up ] };
-      key <AK02> { [         Left,        Home,          Home ] };
-      key <AK03> { [         Down,   Page_Down,     Page_Down ] };
-      key <AK04> { [        Right,         End,           End ] };
 
       // Fn Layer
       key.type = "ONE_LEVEL";

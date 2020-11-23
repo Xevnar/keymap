@@ -11,5 +11,5 @@ xkb_symbols "xev_arrows"{
     key <AK01> { [           Up,     Page_Up,       Page_Up ] };
     key <AK02> { [         Left,        Home,          Home ] };
     key <AK03> { [         Down,   Page_Down,     Page_Down ] };
-
+    key <AK04> { [        Right,         End,           End ] };
 }; // vim:ft=c
