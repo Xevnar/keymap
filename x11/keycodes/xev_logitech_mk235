@@ -65,7 +65,7 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <HR14> = <RTRN>;
 
     // Bottom Row
-    alias <BR01> = <SHRG>;
+    alias <BR01> = <RTSH>;
     alias <BR02> = <COMP>;
     alias <BR03> = <AL20>;
     alias <BR04> = <AL21>;
@@ -77,21 +77,21 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <BR10> = <COMA>;
     alias <BR11> = <STOP>;
     alias <BR12> = <SLSH>;
-    alias <BR13> = <SHLF>;
+    alias <BR13> = <LFSH>;
 
     // Control Row
-    alias <CR01> = <CTRG>;
+    alias <CR01> = <RCTL>;
     alias <CR02> = <SUPR>;
-    alias <CR03> = <ALRG>;
+    alias <CR03> = <LALT>;
     alias <CR04> = <SPCE>;
-    alias <CR05> = <ALLF>;
-    alias <CR06> = <CTLF>;
+    alias <CR05> = <RALT>;
+    alias <CR06> = <LCTL>;
 
     // Arrow Keys
     alias <AK01> = <UPAR>;  // Up
     alias <AK02> = <LFAR>;  // Left
     alias <AK03> = <DNAR>;  // Down
-    alias <AK04> = <RGAR>;  // Right
+    alias <AK04> = <RTAR>;  // Right
 
     // Nav Cluster
     alias <NV01> = <INS>;
