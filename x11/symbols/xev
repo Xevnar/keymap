@@ -54,7 +54,7 @@ xkb_symbols "logitech_mk235"{
 
       // Home Row
       key.type = "THREE_LEVEL";
-      /ey <HR01> { [    BackSpace,      Delete,     BackSpace ] };
+      key <HR01> { [    BackSpace,      Delete,     BackSpace ] };
       key <HR02> { [            a,           A,             0 ] };
       key <HR03> { [            o,           O,             4 ] };
       key <HR04> { [            e,           E,             5 ] };
@@ -119,6 +119,16 @@ xkb_symbols "logitech_mk235"{
       key <FN11> { [   voidSymbol ] };
       key <FN12> { [   voidSymbol ] };
       key <FN13> { [   voidSymbol ] };
+
+      // Undefined keycodes
+      key.type = "ONE_LEVEL";
+      key <UN01> { [   voidSymbol ] };
+      key <UN02> { [   voidSymbol ] };
+      key <UN03> { [   voidSymbol ] };
+      key <UN04> { [   voidSymbol ] };
+      key <UN05> { [   voidSymbol ] };
+      key <UN06> { [   voidSymbol ] };
+      key <UN07> { [   voidSymbol ] };
 };
 
 
@@ -176,7 +186,7 @@ xkb_symbols "lenovo_yoga"{
 
       // Home Row
       key.type = "THREE_LEVEL";
-      /ey <HR01> { [    BackSpace,      Delete,     BackSpace ] };
+      key <HR01> { [    BackSpace,      Delete,     BackSpace ] };
       key <HR02> { [            a,           A,             0 ] };
       key <HR03> { [            o,           O,             4 ] };
       key <HR04> { [            e,           E,             5 ] };
@@ -240,4 +250,19 @@ xkb_symbols "lenovo_yoga"{
       key <FN12> { [   voidSymbol ] };
       key <FN13> { [   voidSymbol ] };
       key <FN14> { [   voidSymbol ] };
+
+      // Undefined keycodes
+      key.type = "ONE_LEVEL";
+      key <UN01> { [   voidSymbol ] };
+      key <UN02> { [   voidSymbol ] };
+      key <UN03> { [   voidSymbol ] };
+      key <UN04> { [   voidSymbol ] };
+      key <UN05> { [   voidSymbol ] };
+      key <UN06> { [   voidSymbol ] };
+      key <UN07> { [   voidSymbol ] };
+      key <UN08> { [   voidSymbol ] };
+      key <UN09> { [   voidSymbol ] };
+      key <UN10> { [   voidSymbol ] };
+      key <UN11> { [   voidSymbol ] };
+      key <UN12> { [   voidSymbol ] };
 }; // vim:ft=c

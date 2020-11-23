@@ -110,4 +110,18 @@ default xkb_keycodes "xev_lenovo_yoga" {
     alias <FL12> = <HOME>;  // Left
     alias <FL13> = <END>;   // Down
     alias <FL14> = <PGDN>;  // Right
+
+    // Undefined keycodes
+    alias <UN01> = <SCLK>;
+    alias <UN02> = <COMP>;
+    alias <UN03> = <PAUS>;
+    alias <UN04> = <MENU>;
+	alias <UN05> = <CALC>;
+	alias <UN06> = <MAIL>;
+	alias <UN07> = <NXSG>;
+	alias <UN08> = <PLSG>;
+	alias <UN09> = <PRSG>;
+	alias <UN10> = <CONF>;
+	alias <UN11> = <HMPG>;
+	alias <UN12> = <SRCH>;
 };  // vim:ft=c

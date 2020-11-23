@@ -136,4 +136,13 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <FL13> = <SCLK>;  // INS
     alias <FL14> = <PAUS>;  // DELE
     alias <FL15> = <MENU>;  // RCTL
+
+    // Undefined keycodes
+    alias <UN01> = <MIC>;
+    alias <UN02> = <ETCH>;
+    alias <UN03> = <DTCH>;
+    alias <UN04> = <CAM>;
+    alias <UN05> = <BRI->;
+    alias <UN06> = <BRI+>;
+    alias <UN07> = <AIRP>;
 };  // vim:ft=c
