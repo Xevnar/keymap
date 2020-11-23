@@ -1,0 +1,6 @@
+xkb_compatibility "xev_logitech_mk235" {
+    include "xev_mods"
+    include "xev_latches"
+    include "xev_server"
+    include "xev_repeat_bs"
+};  // vim:ft=c

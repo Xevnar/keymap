@@ -1,0 +1,29 @@
+xkb_compatibility "xev_mods" {
+    virtual_modifiers Alt;
+
+    interpret.useModMapMods= AnyLevel;
+    interpret.repeat= False;
+    interpret.locking= False;
+
+    interpret Alt_L+AnyOf(all) {
+        virtualModifier= Alt;
+        action= SetMods(modifiers=Alt,clearLocks);
+    };
+
+    interpret Alt_L+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Alt,clearLocks);
+    };
+
+    interpret Alt_R+AnyOf(all) {
+        virtualModifier= Alt;
+        action= SetMods(modifiers=Alt,clearLocks);
+    };
+
+    interpret Alt_R+AnyOfOrNone(all) {
+        action= SetMods(modifiers=Alt,clearLocks);
+    };
+
+    interpret Any+AnyOf(all) {
+        action= SetMods(modifiers=modMapMods,clearLocks);
+    };
+};  // vim:ft=c

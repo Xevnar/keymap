@@ -1,0 +1,13 @@
+// Normal keysyms can be found in '/usr/include/X11/keysymdef.h'
+// XF86 keysyms can be found in '/usr/include/X11/XF86keysym.h'
+
+partial modifier_keys
+xkb_symbols "xev_mods"{
+      // Mapping Modifiers
+      modifier_map Shift   {   Shift_L,   Shift_R };
+      modifier_map Control { Control_L, Control_R };
+      modifier_map Mod1    {     Alt_L,     Alt_R };
+      modifier_map Mod3    { };
+      modifier_map Mod4    {   Super_L,   Super_R};
+      modifier_map Mod5    { };
+}; // vim:ft=c

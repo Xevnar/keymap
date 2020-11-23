@@ -1,0 +1,24 @@
+// Normal keysyms can be found in '/usr/include/X11/keysymdef.h'
+// XF86 keysyms can be found in '/usr/include/XF86keysym.h'
+
+partial function_keys
+xkb_symbols "xev_function"{
+
+    name[Group1] = "dvorak";
+
+    // Function Row
+    key.type = "X_LEVEL";
+    key <FR01> { [          F13, voidSymbol, voidSymbol,  Terminate_Server ] };
+    key <FR02> { [           F1, voidSymbol, voidSymbol,  xf86_Switch_VT_1 ] };
+    key <FR03> { [           F2, voidSymbol, voidSymbol,  xf86_Switch_VT_2 ] };
+    key <FR04> { [           F3, voidSymbol, voidSymbol,  xf86_Switch_VT_3 ] };
+    key <FR05> { [           F4, voidSymbol, voidSymbol,  xf86_Switch_VT_4 ] };
+    key <FR06> { [           F5, voidSymbol, voidSymbol,  xf86_Switch_VT_5 ] };
+    key <FR07> { [           F6, voidSymbol, voidSymbol,  xf86_Switch_VT_6 ] };
+    key <FR08> { [           F7, voidSymbol, voidSymbol,  xf86_Switch_VT_7 ] };
+    key <FR09> { [           F8, voidSymbol, voidSymbol,  xf86_Switch_VT_8 ] };
+    key <FR10> { [           F9, voidSymbol, voidSymbol,  xf86_Switch_VT_9 ] };
+    key <FR11> { [          F10, voidSymbol, voidSymbol, xf86_Switch_VT_10 ] };
+    key <FR12> { [          F11, voidSymbol, voidSymbol, xf86_Switch_VT_11 ] };
+    key <FR13> { [          F12, voidSymbol, voidSymbol, xf86_Switch_VT_12 ] };
+}; // vim:ft=c

@@ -1,0 +1,37 @@
+xkb_types "xev_complete" {
+    virtual_modifiers Alt,Meta,Super;
+
+    type "ONE_LEVEL" {
+        modifiers= none;
+        level_name[Level1]= "Base";
+    };
+
+    type "TWO_LEVEL" {
+        modifiers= Shift;
+        map[Shift]= Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+    };
+
+    type "THREE_LEVEL" {
+        modifiers= Shift+Meta;
+        map[Shift]= Level2;
+        map[Meta]= Level3;
+        map[Shift+Meta]= Level3;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Num";
+    };
+
+    type "X_LEVEL" {
+        modifiers= Control+Shift+Meta;
+        map[Control]= Level1;
+        map[Shift]= Level2;
+        map[Meta]= Level3;
+        map[Control+Meta]= Level4;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Num";
+        level_name[Level4]= "X";
+    };
+};  // vim:ft=c
