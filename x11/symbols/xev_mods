@@ -7,7 +7,6 @@ xkb_symbols "xev_mods"{
       modifier_map Shift   {   Shift_L,   Shift_R };
       modifier_map Control { Control_L, Control_R };
       modifier_map Mod1    {     Alt_L,     Alt_R };
-      modifier_map Mod3    { };
+      modifier_map Mod3    {    Meta_L };
       modifier_map Mod4    {   Super_L,   Super_R};
-      modifier_map Mod5    { };
 }; // vim:ft=c
