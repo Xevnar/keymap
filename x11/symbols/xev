@@ -7,16 +7,16 @@ xkb_symbols "logitech_mk235"{
       name[group1] = "Custom Dvorak (Desktop)";
 
       // Modifiers
-      include "xev_mods";
+      include "xev_mods"
 
       // Function Row
-      include "xev_function";
+      include "xev_function"
 
       // Numpad, and Nav cluster
-      include "xev_numpad";
+      include "xev_numpad"
 
       // Arrow key
-      include "xev_arrows";
+      include "xev_arrows"
 
       // Num Row
       key.type = "ONE_LEVEL";
@@ -73,7 +73,7 @@ xkb_symbols "logitech_mk235"{
       // Bottom Row
       key.type = "ONE_LEVEL";
       key <BR01> { [    Control_L ] };
-      key <BR02> { [       Meta_L ],  virtualMods= Meta };
+      key <BR02> { [       Meta_L ] };
       key.type = "THREE_LEVEL";
       key <BR03> { [        colon,      period,         slash ] };
       key <BR04> { [            q,           Q,             7 ] };
@@ -90,11 +90,11 @@ xkb_symbols "logitech_mk235"{
 
       // Control Row
       key.type = "ONE_LEVEL";
-      key <CR01> { [        Alt_L ],   virtualMods= Alt };
-      key <CR02> { [      Super_L ], virtualMods= Super };
+      key <CR01> { [        Alt_L ] };
+      key <CR02> { [      Super_L ] };
       key <CR03> { [       Escape ] };
       key <CR04> { [        space ] };
-      key <CR05> { [        Alt_R ],   virtualMods= Alt };
+      key <CR05> { [        Alt_R ] };
       key <CR06> { [    Control_R ] };
 
       // Fn Layer
@@ -130,19 +130,20 @@ xkb_symbols "logitech_mk235"{
 partial alphanumeric_keys
 xkb_symbols "lenovo_yoga"{
 
-      name[group1] = "Custom Dvorak (laptoptop)";
+      name[group1] = "Custom Dvorak (laptop)";
 
       // Modifiers
-      include "xev_mods";
+      include "xev_mods"
 
       // Function Row
-      include "xev_function";
+      include "xev_function"
+      key.type = "ONE_LEVEL";
       key <FR14> { [   voidSymbol ] };
       key <FR15> { [   voidSymbol ] };
       key <FR16> { [   voidSymbol ] };
 
       // Arrow key
-      include "xev_arrows";
+      include "xev_arrows"
 
       // Num Row
       key.type = "ONE_LEVEL";
@@ -177,6 +178,7 @@ xkb_symbols "lenovo_yoga"{
       key <TR11> { [            l,           L,     ampersand ] };
       key <TR12> { [        slash,    question,     semicolon ] };
       key <TR13> { [    backslash,      exclam,    underscore ] };
+      key.type = "ONE_LEVEL";
       key <HR14> { [           at ] };
 
       // Home Row
@@ -198,7 +200,7 @@ xkb_symbols "lenovo_yoga"{
 
       // Bottom Row
       key.type = "ONE_LEVEL";
-      key <BR01> { [       Meta_L ],  virtualMods= Meta };
+      key <BR01> { [       Meta_L ] };
       key.type = "THREE_LEVEL";
       key <BR02> { [        colon,      period,         slash ] };
       key <BR03> { [            q,           Q,             7 ] };
@@ -216,10 +218,10 @@ xkb_symbols "lenovo_yoga"{
       // Control Row
       key.type = "ONE_LEVEL";
       key <CR01> { [    Control_L ] };
-      key <CR02> { [      Super_L ], virtualMods= Super };
+      key <CR02> { [      Super_L ] };
       key <CR03> { [       Escape ] };
       key <CR04> { [        space ] };
-      key <CR05> { [        Alt_R ],   virtualMods= Alt };
+      key <CR05> { [        Alt_R ] };
       key <CR06> { [    Control_R ] };
 
       // Fn Layer
