@@ -108,16 +108,16 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <NP04> = <NSUB>;
     alias <NP05> = <NADD>;
     alias <NP06> = <NENT>;
-    alias <NP07> = <NUM1>;
-    alias <NP08> = <NUM2>;
-    alias <NP09> = <NUM3>;
-    alias <NP10> = <NUM4>;
-    alias <NP11> = <NUM5>;
-    alias <NP12> = <NUM6>;
-    alias <NP13> = <NUM7>;
-    alias <NP14> = <NUM8>;
-    alias <NP15> = <NUM9>;
-    alias <NP16> = <NUM0>;
+    alias <NP07> = <KNM1>;
+    alias <NP08> = <KNM2>;
+    alias <NP09> = <KNM3>;
+    alias <NP10> = <KNM4>;
+    alias <NP11> = <KNM5>;
+    alias <NP12> = <KNM6>;
+    alias <NP13> = <KNM7>;
+    alias <NP14> = <KNM8>;
+    alias <NP15> = <KNM9>;
+    alias <NP16> = <KNM0>;
     alias <NP17> = <NDOT>;
 
     // Fn layer
