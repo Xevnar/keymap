@@ -1,11 +1,8 @@
 // Normal keysyms can be found in '/usr/include/X11/keysymdef.h'
 // XF86 keysyms can be found in '/usr/include/X11/XF86keysym.h'
 
-partial keypad_keys
-xkb_symbols "xev_num"{
-
-    name[Group1] = "dvorak";
-
+default partial keypad_keys
+xkb_symbols "xev_num" {
     // Nav Cluster
     key.type = "ONE_LEVEL";
     key <NV01> { [   voidSymbol ] };
