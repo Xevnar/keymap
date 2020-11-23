@@ -46,7 +46,7 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <TR10> = <AL09>;
     alias <TR11> = <AL10>;
     alias <TR12> = <BRLF>;
-    alias <TR13> = <BRRG>;
+    alias <TR13> = <BRRT>;
 
     // Home Row
     alias <HR01> = <CAPS>;
@@ -105,7 +105,7 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <NP01> = <NUML>;
     alias <NP02> = <NDIV>;
     alias <NP03> = <NMUL>;
-    alias <NP04> = <NSUM>;
+    alias <NP04> = <NSUB>;
     alias <NP05> = <NADD>;
     alias <NP06> = <NENT>;
     alias <NP07> = <NUM1>;
@@ -133,7 +133,7 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <FL10> = <VOL->;  // F10
     alias <FL11> = <VOL+>;  // F11
     alias <FL12> = <PRSC>;  // F12
-    alias <FL13> = <SCRL>;  // INS
-    alias <FL14> = <PABR>;  // DELE
+    alias <FL13> = <SCLK>;  // INS
+    alias <FL14> = <PAUS>;  // DELE
     alias <FL15> = <MENU>;  // RCTL
 };  // vim:ft=c
