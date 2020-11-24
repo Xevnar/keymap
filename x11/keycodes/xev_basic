@@ -122,4 +122,7 @@ default xkb_keycodes "xev_basic" {
 	<BRI-> = 232;	// KEY_BRIGHTNESSDOWN
 	<BRI+> = 233;	// KEY_BRIGHTNESSUP
 	<AIRP> = 255;	// KEY_RFKILL
+
+    // indicators are required
+    indicator 1 = "Latch";
 };  // vim:ft=c

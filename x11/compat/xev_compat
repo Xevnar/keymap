@@ -3,4 +3,10 @@ xkb_compatibility "xev_compat" {
     include "xev_latches"
     include "xev_server"
     include "xev_repeat_bs"
+
+    // indicators are required
+    indicator "Latch" {
+        !allowExplicit;
+        modifiers= Shift+Mod2+Mod3;
+    };
 };  // vim:ft=c
