@@ -8,7 +8,6 @@ xkb_types "xev_complete" {
 
     type "TWO_LEVEL" {
         modifiers= Shift;
-        map[None] = Level1;
         map[Shift]= Level2;
         level_name[Level1]= "Base";
         level_name[Level2]= "Shift";
@@ -16,7 +15,6 @@ xkb_types "xev_complete" {
 
     type "THREE_LEVEL" {
         modifiers= Shift+Mod3;
-        map[None] = Level1;
         map[Shift]= Level2;
         map[Mod3]= Level3;
         map[Shift+Mod3]= Level3;
@@ -27,7 +25,6 @@ xkb_types "xev_complete" {
 
     type "X_LEVEL" {
         modifiers= Control+Shift+Mod3;
-        map[None] = Level1;
         map[Control]= Level1;
         map[Shift]= Level2;
         map[Mod3]= Level3;
@@ -40,11 +37,11 @@ xkb_types "xev_complete" {
 
     // MUST NOT BE REMOVED
     type "ALPHABETIC" {
-        modifiers = Shift+Lock;
-        map[None] = Level1;
-        map[Shift] = Level2;
-        map[Lock] = Level2;
-        level_name[Level1] = "Base";
-        level_name[Level2] = "Caps";
+        modifiers = None;
+        level_name[Level1] = "Any";
+    };
+    type "KEYPAD" {
+        modifiers= Node;
+        level_name[Level1] = "Any";
     };
 };  // vim:ft=c
