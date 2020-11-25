@@ -2,257 +2,68 @@
 // XF86 keysyms can be found in '/usr/include/XF86keysym.h'
 
 default partial alphanumeric_keys
-xkb_symbols "logitech_mk235"{
+xkb_symbols "dvorak" {
+    name[group1] = "Custom Dvorak";
 
-      name[group1] = "Custom Dvorak (Desktop)";
+    // Keyboard specific options are stored in xev_includes
 
-      // Modifiers
-      include "xev_mods"
+    // Num Row
+    key.type = "ONE_LEVEL";
+    key <NR01> { [   voidSymbol ] };
+    key <NR02> { [   voidSymbol ] };
+    key <NR03> { [   voidSymbol ] };
+    key <NR04> { [   voidSymbol ] };
+    key <NR05> { [   voidSymbol ] };
+    key <NR06> { [   voidSymbol ] };
+    key <NR07> { [   voidSymbol ] };
+    key <NR08> { [   voidSymbol ] };
+    key <NR09> { [   voidSymbol ] };
+    key <NR10> { [   voidSymbol ] };
+    key <NR11> { [   voidSymbol ] };
+    key <NR12> { [   voidSymbol ] };
+    key <NR13> { [   voidSymbol ] };
+    key <NR14> { [   voidSymbol ] };
 
-      // Function Row
-      include "xev_function"
+    // Top Row
+    key.type = "THREE_LEVEL";
+    key <TR02> { [    semicolon,       comma,      asterisk ] };
+    key <TR03> { [   apostrophe,    quotedbl,             1 ] };
+    key <TR04> { [        grave, asciicircum,             2 ] };
+    key <TR05> { [            p,           P,             3 ] };
+    key <TR06> { [            y,           Y,          plus ] };
+    key <TR07> { [            f,           F,          less ] };
+    key <TR08> { [            g,           G,     braceleft ] };
+    key <TR09> { [            c,           C,   bracketleft ] };
+    key <TR10> { [            r,           R,     parenleft ] };
+    key <TR11> { [            l,           L,     ampersand ] };
+    key <TR12> { [        slash,    question,     semicolon ] };
+    key <TR13> { [    backslash,      exclam,    underscore ] };
 
-      // Numpad, and Nav cluster
-      include "xev_numpad"
+    // Home Row
+    key.type = "THREE_LEVEL";
+    key <HR02> { [            a,           A,             0 ] };
+    key <HR03> { [            o,           O,             4 ] };
+    key <HR04> { [            e,           E,             5 ] };
+    key <HR05> { [            u,           U,             6 ] };
+    key <HR06> { [            i,           I,        period ] };
+    key <HR07> { [            d,           D,         equal ] };
+    key <HR08> { [            h,           H,    asciitilde ] };
+    key <HR09> { [            t,           T,        dollar ] };
+    key <HR10> { [            n,           N,       percent ] };
+    key <HR11> { [            s,           S,    numbersign ] };
+    key <HR12> { [   underscore,       minus,         comma ] };
 
-      // Arrow key
-      include "xev_arrows"
+    // Bottom Row
+    key.type = "THREE_LEVEL";
+    key <BR02> { [        colon,      period,         slash ] };
+    key <BR03> { [            q,           Q,             7 ] };
+    key <BR04> { [            j,           J,             8 ] };
+    key <BR05> { [            k,           K,             9 ] };
+    key <BR06> { [            x,           X,         minus ] };
+    key <BR07> { [            b,           B,       greater ] };
+    key <BR08> { [            m,           M,    braceright ] };
+    key <BR09> { [            w,           W,  bracketright ] };
+    key <BR10> { [            v,           V,    parenright ] };
+    key <BR11> { [            z,           Z,         colon ] };
 
-      // Num Row
-      key.type = "ONE_LEVEL";
-      key <NR01> { [   voidSymbol ] };
-      key <NR02> { [   voidSymbol ] };
-      key <NR03> { [   voidSymbol ] };
-      key <NR04> { [   voidSymbol ] };
-      key <NR05> { [   voidSymbol ] };
-      key <NR06> { [   voidSymbol ] };
-      key <NR07> { [   voidSymbol ] };
-      key <NR08> { [   voidSymbol ] };
-      key <NR09> { [   voidSymbol ] };
-      key <NR10> { [   voidSymbol ] };
-      key <NR11> { [   voidSymbol ] };
-      key <NR12> { [   voidSymbol ] };
-      key <NR13> { [   voidSymbol ] };
-      key <NR14> { [   voidSymbol ] };
-
-      // Top Row
-      key.type = "ONE_LEVEL";
-      key <TR01> { [          Tab ] };
-      key.type = "THREE_LEVEL";
-      key <TR02> { [    semicolon,       comma,      asterisk ] };
-      key <TR03> { [   apostrophe,    quotedbl,             1 ] };
-      key <TR04> { [        grave, asciicircum,             2 ] };
-      key <TR05> { [            p,           P,             3 ] };
-      key <TR06> { [            y,           Y,          plus ] };
-      key <TR07> { [            f,           F,          less ] };
-      key <TR08> { [            g,           G,     braceleft ] };
-      key <TR09> { [            c,           C,   bracketleft ] };
-      key <TR10> { [            r,           R,     parenleft ] };
-      key <TR11> { [            l,           L,     ampersand ] };
-      key <TR12> { [        slash,    question,     semicolon ] };
-      key <TR13> { [    backslash,      exclam,    underscore ] };
-
-      // Home Row
-      key.type = "THREE_LEVEL";
-      key <HR01> { [    BackSpace,      Delete,     BackSpace ] };
-      key <HR02> { [            a,           A,             0 ] };
-      key <HR03> { [            o,           O,             4 ] };
-      key <HR04> { [            e,           E,             5 ] };
-      key <HR05> { [            u,           U,             6 ] };
-      key <HR06> { [            i,           I,        period ] };
-      key <HR07> { [            d,           D,         equal ] };
-      key <HR08> { [            h,           H,    asciitilde ] };
-      key <HR09> { [            t,           T,        dollar ] };
-      key <HR10> { [            n,           N,       percent ] };
-      key <HR11> { [            s,           S,    numbersign ] };
-      key <HR12> { [   underscore,       minus,         comma ] };
-      key.type = "ONE_LEVEL";
-      key <HR13> { [           at ] };
-      key <HR14> { [       Return ] };
-
-      // Bottom Row
-      key.type = "ONE_LEVEL";
-      key <BR01> { [    Control_L ] };
-      key <BR02> { [       Meta_L ] };
-      key.type = "THREE_LEVEL";
-      key <BR03> { [        colon,      period,         slash ] };
-      key <BR04> { [            q,           Q,             7 ] };
-      key <BR05> { [            j,           J,             8 ] };
-      key <BR06> { [            k,           K,             9 ] };
-      key <BR07> { [            x,           X,         minus ] };
-      key <BR08> { [            b,           B,       greater ] };
-      key <BR09> { [            m,           M,    braceright ] };
-      key <BR10> { [            w,           W,  bracketright ] };
-      key <BR11> { [            v,           V,    parenright ] };
-      key <BR12> { [            z,           Z,         colon ] };
-      key.type = "ONE_LEVEL";
-      key <BR13> { [      Shift_R ] };
-
-      // Control Row
-      key.type = "ONE_LEVEL";
-      key <CR01> { [        Alt_L ] };
-      key <CR02> { [      Super_L ] };
-      key <CR03> { [       Escape ] };
-      key <CR04> { [        space ] };
-      key <CR05> { [        Alt_R ] };
-      key <CR06> { [    Control_R ] };
-
-      // Fn Layer
-      key.type = "ONE_LEVEL";
-      key <FL01> { [   voidSymbol ] };
-      key <FL02> { [   voidSymbol ] };
-      key <FL03> { [   voidSymbol ] };
-      key <FL04> { [   voidSymbol ] };
-      key <FL05> { [   voidSymbol ] };
-      key <FL06> { [   voidSymbol ] };
-      key <FL07> { [   voidSymbol ] };
-      key <FL08> { [   voidSymbol ] };
-      key <FL09> { [   voidSymbol ] };
-      key <FL10> { [   voidSymbol ] };
-      key <FL11> { [   voidSymbol ] };
-      key <FL12> { [   voidSymbol ] };
-      key <FL13> { [   voidSymbol ] };
-      key <FL14> { [   voidSymbol ] };
-      key <FL15> { [   voidSymbol ] };
-
-      // Undefined keycodes
-      key.type = "ONE_LEVEL";
-      key <UN01> { [   voidSymbol ] };
-      key <UN02> { [   voidSymbol ] };
-      key <UN03> { [   voidSymbol ] };
-      key <UN04> { [   voidSymbol ] };
-      key <UN05> { [   voidSymbol ] };
-      key <UN06> { [   voidSymbol ] };
-      key <UN07> { [   voidSymbol ] };
-};
-
-
-partial alphanumeric_keys
-xkb_symbols "lenovo_yoga"{
-
-      name[group1] = "Custom Dvorak (laptop)";
-
-      // Modifiers
-      include "xev_mods"
-
-      // Function Row
-      include "xev_function"
-      key.type = "ONE_LEVEL";
-      key <FR14> { [   voidSymbol ] };
-      key <FR15> { [   voidSymbol ] };
-      key <FR16> { [   voidSymbol ] };
-
-      // Arrow key
-      include "xev_arrows"
-
-      // Num Row
-      key.type = "ONE_LEVEL";
-      key <NR01> { [   voidSymbol ] };
-      key <NR02> { [   voidSymbol ] };
-      key <NR03> { [   voidSymbol ] };
-      key <NR04> { [   voidSymbol ] };
-      key <NR05> { [   voidSymbol ] };
-      key <NR06> { [   voidSymbol ] };
-      key <NR07> { [   voidSymbol ] };
-      key <NR08> { [   voidSymbol ] };
-      key <NR09> { [   voidSymbol ] };
-      key <NR10> { [   voidSymbol ] };
-      key <NR11> { [   voidSymbol ] };
-      key <NR12> { [   voidSymbol ] };
-      key <NR13> { [   voidSymbol ] };
-      key <NR14> { [   voidSymbol ] };
-
-      // Top Row
-      key.type = "ONE_LEVEL";
-      key <TR01> { [          Tab ] };
-      key.type = "THREE_LEVEL";
-      key <TR02> { [    semicolon,       comma,      asterisk ] };
-      key <TR03> { [   apostrophe,    quotedbl,             1 ] };
-      key <TR04> { [        grave, asciicircum,             2 ] };
-      key <TR05> { [            p,           P,             3 ] };
-      key <TR06> { [            y,           Y,          plus ] };
-      key <TR07> { [            f,           F,          less ] };
-      key <TR08> { [            g,           G,     braceleft ] };
-      key <TR09> { [            c,           C,   bracketleft ] };
-      key <TR10> { [            r,           R,     parenleft ] };
-      key <TR11> { [            l,           L,     ampersand ] };
-      key <TR12> { [        slash,    question,     semicolon ] };
-      key <TR13> { [    backslash,      exclam,    underscore ] };
-      key.type = "ONE_LEVEL";
-      key <HR14> { [           at ] };
-
-      // Home Row
-      key.type = "THREE_LEVEL";
-      key <HR01> { [    BackSpace,      Delete,     BackSpace ] };
-      key <HR02> { [            a,           A,             0 ] };
-      key <HR03> { [            o,           O,             4 ] };
-      key <HR04> { [            e,           E,             5 ] };
-      key <HR05> { [            u,           U,             6 ] };
-      key <HR06> { [            i,           I,        period ] };
-      key <HR07> { [            d,           D,         equal ] };
-      key <HR08> { [            h,           H,    asciitilde ] };
-      key <HR09> { [            t,           T,        dollar ] };
-      key <HR10> { [            n,           N,       percent ] };
-      key <HR11> { [            s,           S,    numbersign ] };
-      key <HR12> { [   underscore,       minus,         comma ] };
-      key.type = "ONE_LEVEL";
-      key <HR13> { [       Return ] };
-
-      // Bottom Row
-      key.type = "ONE_LEVEL";
-      key <BR01> { [       Meta_L ] };
-      key.type = "THREE_LEVEL";
-      key <BR02> { [        colon,      period,         slash ] };
-      key <BR03> { [            q,           Q,             7 ] };
-      key <BR04> { [            j,           J,             8 ] };
-      key <BR05> { [            k,           K,             9 ] };
-      key <BR06> { [            x,           X,         minus ] };
-      key <BR07> { [            b,           B,       greater ] };
-      key <BR08> { [            m,           M,    braceright ] };
-      key <BR09> { [            w,           W,  bracketright ] };
-      key <BR10> { [            v,           V,    parenright ] };
-      key <BR11> { [            z,           Z,         colon ] };
-      key.type = "ONE_LEVEL";
-      key <BR12> { [      Shift_R ] };
-
-      // Control Row
-      key.type = "ONE_LEVEL";
-      key <CR01> { [    Control_L ] };
-      key <CR02> { [      Super_L ] };
-      key <CR03> { [       Escape ] };
-      key <CR04> { [        space ] };
-      key <CR05> { [        Alt_R ] };
-      key <CR06> { [    Control_R ] };
-
-      // Fn Layer
-      key.type = "ONE_LEVEL";
-      key <FL01> { [   voidSymbol ] };
-      key <FL02> { [   voidSymbol ] };
-      key <FL03> { [   voidSymbol ] };
-      key <FL04> { [   voidSymbol ] };
-      key <FL05> { [   voidSymbol ] };
-      key <FL06> { [   voidSymbol ] };
-      key <FL07> { [   voidSymbol ] };
-      key <FL08> { [   voidSymbol ] };
-      key <FL09> { [   voidSymbol ] };
-      key <FL10> { [   voidSymbol ] };
-      key <FL11> { [   voidSymbol ] };
-      key <FL12> { [   voidSymbol ] };
-      key <FL13> { [   voidSymbol ] };
-      key <FL14> { [   voidSymbol ] };
-
-      // Undefined keycodes
-      key.type = "ONE_LEVEL";
-      key <UN01> { [   voidSymbol ] };
-      key <UN02> { [   voidSymbol ] };
-      key <UN03> { [   voidSymbol ] };
-      key <UN04> { [   voidSymbol ] };
-      key <UN05> { [   voidSymbol ] };
-      key <UN06> { [   voidSymbol ] };
-      key <UN07> { [   voidSymbol ] };
-      key <UN08> { [   voidSymbol ] };
-      key <UN09> { [   voidSymbol ] };
-      key <UN10> { [   voidSymbol ] };
-      key <UN11> { [   voidSymbol ] };
-      key <UN12> { [   voidSymbol ] };
 }; // vim:ft=c

@@ -1,0 +1,240 @@
+// Normal keysyms can be found in '/usr/include/X11/keysymdef.h'
+// XF86 keysyms can be found in '/usr/include/X11/XF86keysym.h'
+
+// This file includes keyboard specific symbols between my keymaps
+default partial alphanumeric_keys function_keys keypad_keys modifier_keys
+xkb_symbols "logi" {
+    // keyboard specific
+    include "logi_home"
+    include "logi_bottom"
+    include "logi_control"
+    include "logi_fn"
+
+    // Non-keyboard specific
+    include "functions"
+    include "arrows"
+    include "nav"
+    include "keypad"
+    include "misc"
+    include "mods"
+};
+
+partial alphanumeric_keys function_keys keypad_keys modifier_keys
+xkb_symbols "yoga" {
+    // keyboard specific
+    include "yoga_functions"
+    include "yoga_top"
+    include "yoga_home"
+    include "yoga_bottom"
+    include "yoga_control"
+    include "yoga_fn"
+
+    // Non-keyboard specific
+    include "arrows"
+    include "misc"
+    include "mods"
+};
+
+//-----------------------------------------------------------------------------
+// Start of logitech mk235 unique section
+
+hidden partial alphanumeric_keys
+xkb_symbols "logi_home" {
+    key.type = "ONE_LEVEL";
+    key <HR13> { [           at ] };
+    key <HR14> { [       Return ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "logi_bottom" {
+    key.type = "ONE_LEVEL";
+    key <BR00> { [       Meta_L ] };
+    key <BR01> { [    Control_L ] };
+};
+
+hidden partial modifier_keys
+xkb_symbols "logi_control" {
+    key.type = "ONE_LEVEL";
+    key <CR01> { [        Alt_L ] };
+    include "control"
+};
+
+hidden partial function_keys
+xkb_symbols "logi_fn" {
+    key.type = "ONE_LEVEL";
+    key <FL01> { [   voidSymbol ] };
+    key <FL02> { [   voidSymbol ] };
+    key <FL03> { [   voidSymbol ] };
+    key <FL04> { [   voidSymbol ] };
+    key <FL05> { [   voidSymbol ] };
+    key <FL06> { [   voidSymbol ] };
+    key <FL07> { [   voidSymbol ] };
+    key <FL08> { [   voidSymbol ] };
+    key <FL09> { [   voidSymbol ] };
+    key <FL10> { [   voidSymbol ] };
+    key <FL11> { [   voidSymbol ] };
+    key <FL12> { [   voidSymbol ] };
+    key <FL13> { [   voidSymbol ] };
+    key <FL14> { [   voidSymbol ] };
+    key <FL15> { [   voidSymbol ] };
+};
+
+// End of logitech mk235 unique section
+//-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// Start of lenovo yoga unique section
+
+hidden partial function_keys
+xkb_symbols "yoga_functions" {
+    include "functions"
+    key.type = "ONE_LEVEL";
+    key <FR14> { [   voidSymbol ] };
+    key <FR15> { [   voidSymbol ] };
+    key <FR16> { [   voidSymbol ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "yoga_top" {
+    key.type = "ONE_LEVEL";
+    key <TR14> { [           at ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "yoga_home" {
+    key.type = "ONE_LEVEL";
+    key <HR13> { [       Return ] };
+};
+
+hidden partial alphanumeric_keys
+xkb_symbols "yoga_bottom" {
+    key.type = "ONE_LEVEL";
+    key <BR01> { [       Meta_L ] };
+};
+
+hidden partial modifier_keys
+xkb_symbols "yoga_control" {
+    key.type = "ONE_LEVEL";
+    key <CR01> { [    Control_L ] };
+    include "control"
+};
+
+hidden partial function_keys
+xkb_symbols "yoga_fn" {
+    key.type = "ONE_LEVEL";
+    key <FL01> { [   voidSymbol ] };
+    key <FL02> { [   voidSymbol ] };
+    key <FL03> { [   voidSymbol ] };
+    key <FL04> { [   voidSymbol ] };
+    key <FL05> { [   voidSymbol ] };
+    key <FL06> { [   voidSymbol ] };
+    key <FL07> { [   voidSymbol ] };
+    key <FL08> { [   voidSymbol ] };
+    key <FL09> { [   voidSymbol ] };
+    key <FL10> { [   voidSymbol ] };
+    key <FL11> { [   voidSymbol ] };
+    key <FL12> { [   voidSymbol ] };
+    key <FL13> { [   voidSymbol ] };
+    key <FL14> { [   voidSymbol ] };
+};
+
+// End of lenovo yoga unique section
+//-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// Start of shared between all keyboards section
+
+hidden partial function_keys
+xkb_symbols "functions" {
+    key.type = "X_LEVEL";
+    key <FR01> { [          F13, voidSymbol, voidSymbol,  Terminate_Server ] };
+    key <FR02> { [           F1, voidSymbol, voidSymbol,  XF86_Switch_VT_1 ] };
+    key <FR03> { [           F2, voidSymbol, voidSymbol,  XF86_Switch_VT_2 ] };
+    key <FR04> { [           F3, voidSymbol, voidSymbol,  XF86_Switch_VT_3 ] };
+    key <FR05> { [           F4, voidSymbol, voidSymbol,  XF86_Switch_VT_4 ] };
+    key <FR06> { [           F5, voidSymbol, voidSymbol,  XF86_Switch_VT_5 ] };
+    key <FR07> { [           F6, voidSymbol, voidSymbol,  XF86_Switch_VT_6 ] };
+    key <FR08> { [           F7, voidSymbol, voidSymbol,  XF86_Switch_VT_7 ] };
+    key <FR09> { [           F8, voidSymbol, voidSymbol,  XF86_Switch_VT_8 ] };
+    key <FR10> { [           F9, voidSymbol, voidSymbol,  XF86_Switch_VT_9 ] };
+    key <FR11> { [          F10, voidSymbol, voidSymbol, XF86_Switch_VT_10 ] };
+    key <FR12> { [          F11, voidSymbol, voidSymbol, XF86_Switch_VT_11 ] };
+    key <FR13> { [          F12, voidSymbol, voidSymbol, XF86_Switch_VT_12 ] };
+};
+
+hidden partial modifier_keys
+xkb_symbols "control" {
+    key.type = "ONE_LEVEL";
+    key <CR02> { [      Super_L ] };
+    key <CR03> { [       Escape ] };
+    key <CR04> { [        space ] };
+    key <CR05> { [        Alt_R ] };
+    key <CR06> { [    Control_R ] };
+};
+
+
+hidden partial keypad_keys
+xkb_symbols "arrows" {
+    key.type = "THREE_LEVEL";
+    key <AK01> { [           Up,     Page_Up,       Page_Up ] };
+    key <AK02> { [         Left,        Home,          Home ] };
+    key <AK03> { [         Down,   Page_Down,     Page_Down ] };
+    key <AK04> { [        Right,         End,           End ] };
+};
+
+hidden partial keypad_keys
+xkb_symbols "nav" {
+    key.type = "ONE_LEVEL";
+    key <NV01> { [   voidSymbol ] };
+    key <NV02> { [   voidSymbol ] };
+    key <NV03> { [   voidSymbol ] };
+    key <NV04> { [   voidSymbol ] };
+    key <NV05> { [   voidSymbol ] };
+    key <NV06> { [   voidSymbol ] };
+};
+
+hidden partial keypad_keys
+xkb_symbols "keypad" {
+    key.type = "ONE_LEVEL";
+    key <NP01> { [   voidSymbol ] };
+    key <NP02> { [   voidSymbol ] };
+    key <NP03> { [   voidSymbol ] };
+    key <NP04> { [   voidSymbol ] };
+    key <NP05> { [   voidSymbol ] };
+    key <NP06> { [   voidSymbol ] };
+    key <NP07> { [   voidSymbol ] };
+    key <NP08> { [   voidSymbol ] };
+    key <NP09> { [   voidSymbol ] };
+    key <NP10> { [   voidSymbol ] };
+    key <NP11> { [   voidSymbol ] };
+    key <NP12> { [   voidSymbol ] };
+    key <NP13> { [   voidSymbol ] };
+    key <NP14> { [   voidSymbol ] };
+    key <NP15> { [   voidSymbol ] };
+    key <NP16> { [   voidSymbol ] };
+    key <NP17> { [   voidSymbol ] };
+};
+
+hidden partial alphanumeric_keys modifier_keys
+xkb_symbols "misc" {
+    key.type = "ONE_LEVEL";
+    key <TR01> { [          Tab ] };
+
+    key.type = "THREE_LEVEL";
+    key <HR01> { [    BackSpace,      Delete,     BackSpace ] };
+
+    key.type = "ONE_LEVEL";
+    key <BR12> { [      Shift_R ] };
+}; // vim:ft=c
+
+hidden partial alphanumeric_keys modifier_keys
+xkb_symbols "mods" {
+    modifier_map Shift   {   Shift_L,   Shift_R };
+    modifier_map Control { Control_L, Control_R };
+    modifier_map Mod1    {     Alt_L,     Alt_R };
+    modifier_map Mod3    {    Meta_L,    Meta_R };
+    modifier_map Mod4    {   Super_L,   Super_R };
+}; // vim:ft=c
+
+// End of shared between all keyboards section
+//-----------------------------------------------------------------------------
