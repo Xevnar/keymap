@@ -2,7 +2,6 @@ xkb_compatibility "xev_compat" {
     include "xev_mods"
     include "xev_latches"
     include "xev_server"
-    include "xev_repeat_bs"
 
     // indicators are required
     indicator "Latch" {
