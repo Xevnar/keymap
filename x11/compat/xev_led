@@ -1,10 +1,6 @@
 xkb_compatibility "xev_compat" {
-    include "xev_mods"
-    include "xev_latches"
-    include "xev_server"
-
     // indicators are required
-    indicator "Latch" {
+    indicator "Caps Lock" {
         !allowExplicit;
         modifiers= Shift+Mod2+Mod3;
     };

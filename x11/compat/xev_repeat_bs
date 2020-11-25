@@ -1,7 +1,0 @@
-xkb_compatibility "xev_repeat_bs" {
-    interpret.repeat= True;
-
-    interpret BackSpace{
-        repeat= True;
-    };
-};  // vim:ft=c
