@@ -1,5 +1,5 @@
 default
-xkb_keycodes "logitech_mk235" {
+xkb_keycodes "logi" {
     // Function Row
     include "xev_includes(function)"
 
@@ -48,7 +48,7 @@ xkb_keycodes "logitech_mk235" {
     alias <FL15> = <MENU>;  // RCTL
 };
 
-xkb_keycodes "lenovo_yoga" {
+xkb_keycodes "yoga" {
     // Function Row
     include "xev_includes(function)"
     alias <FR14> = <PRSC>;
