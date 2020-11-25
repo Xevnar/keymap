@@ -1,34 +1,34 @@
 default
 xkb_keycodes "logitech_mk235" {
     // Function Row
-    include "function"
+    include "xev_includes(function)"
 
     // Number Row
-    include "number"
+    include "xev_includes(number)"
 
     // Top Row
-    include "top"
+    include "xev_includes(top)"
 
     // Home Row
-    include "home"
+    include "xev_includes(home)"
     alias <HR13> = <BKSL>;
     alias <HR14> = <RTRN>;
 
     // Bottom Row
     alias <BR00> = <LSGT>;
-    include "bottom"
+    include "xev_includes(bottom)"
 
     // Control Row
-    include "control"
+    include "xev_includes(control)"
 
     // Arrow Keys
-    include "arrows"
+    include "xev_includes(arrows)"
 
     // Nav Cluster
-    include "nav"
+    include "xev_includes(nav)"
 
     // Num Pad
-    include "keypad"
+    include "xev_includes(keypad)"
 
     // Fn layer
     alias <FL01> = <I180>;  // F1
@@ -50,30 +50,30 @@ xkb_keycodes "logitech_mk235" {
 
 xkb_keycodes "lenovo_yoga" {
     // Function Row
-    include "function"
+    include "xev_includes(function)"
     alias <FR14> = <PRSC>;
     alias <FR15> = <INS>;
     alias <FR16> = <DELE>;
 
     // Number Row
-    include "number"
+    include "xev_includes(number)"
 
     // Top Row
-    include "top"
+    include "xev_includes(top)"
     alias <TR14> = <BKSL>;
 
     // Home Row
-    include "home"
+    include "xev_includes(home)"
     alias <HR13> = <RTRN>;
 
     // Bottom Row
-    include "bottom"
+    include "xev_includes(bottom)"
 
     // Control Row
-    include "control"
+    include "xev_includes(control)"
 
     // Arrow Keys
-    include "arrows"
+    include "xev_includes(arrows)"
 
     // Fn layer
     alias <FL01> = <MUTE>;  // F1
@@ -90,128 +90,4 @@ xkb_keycodes "lenovo_yoga" {
     alias <FL12> = <HOME>;  // Left
     alias <FL13> = <END>;   // Down
     alias <FL14> = <PGDN>;  // Right
-};
-
-xkb_keycodes "function" {
-    alias <FR01> = <ESC>;
-    alias <FR02> = <FK01>;
-    alias <FR03> = <FK02>;
-    alias <FR04> = <FK03>;
-    alias <FR05> = <FK04>;
-    alias <FR06> = <FK05>;
-    alias <FR07> = <FK06>;
-    alias <FR08> = <FK07>;
-    alias <FR09> = <FK08>;
-    alias <FR10> = <FK09>;
-    alias <FR11> = <FK10>;
-    alias <FR12> = <FK11>;
-    alias <FR13> = <FK12>;
-};
-
-xkb_keycodes "number" {
-    alias <NR01> = <TLDE>;
-    alias <NR02> = <AE01>;
-    alias <NR03> = <AE02>;
-    alias <NR04> = <AE03>;
-    alias <NR05> = <AE04>;
-    alias <NR06> = <AE05>;
-    alias <NR07> = <AE06>;
-    alias <NR08> = <AE07>;
-    alias <NR09> = <AE08>;
-    alias <NR10> = <AE09>;
-    alias <NR11> = <AE10>;
-    alias <NR12> = <AE11>;
-    alias <NR13> = <AE12>;
-    alias <NR14> = <BKSP>;
-};
-
-xkb_keycodes "top" {
-    alias <TR01> = <TAB>;
-    alias <TR02> = <AD01>;
-    alias <TR03> = <AD02>;
-    alias <TR04> = <AD03>;
-    alias <TR05> = <AD04>;
-    alias <TR06> = <AD05>;
-    alias <TR07> = <AD06>;
-    alias <TR08> = <AD07>;
-    alias <TR09> = <AD08>;
-    alias <TR10> = <AD09>;
-    alias <TR11> = <AD10>;
-    alias <TR12> = <AD11>;
-    alias <TR13> = <AD12>;
-};
-
-xkb_keycodes "home" {
-    alias <HR01> = <CAPS>;
-    alias <HR02> = <AC01>;
-    alias <HR03> = <AC02>;
-    alias <HR04> = <AC03>;
-    alias <HR05> = <AC04>;
-    alias <HR06> = <AC05>;
-    alias <HR07> = <AC06>;
-    alias <HR08> = <AC07>;
-    alias <HR09> = <AC08>;
-    alias <HR10> = <AC09>;
-    alias <HR11> = <AC10>;
-    alias <HR12> = <AC11>;
-};
-
-xkb_keycodes "home" {
-    alias <BR01> = <LFSH>;
-    alias <BR02> = <AB01>;
-    alias <BR03> = <AB02>;
-    alias <BR04> = <AB03>;
-    alias <BR05> = <AB04>;
-    alias <BR06> = <AB05>;
-    alias <BR07> = <AB06>;
-    alias <BR08> = <AB07>;
-    alias <BR09> = <AB08>;
-    alias <BR10> = <AB09>;
-    alias <BR11> = <AB10>;
-    alias <BR12> = <RTSH>;
-};
-
-xkb_keycodes "control" {
-    alias <CR01> = <LCTL>;
-    alias <CR02> = <LWIN>;
-    alias <CR03> = <LALT>;
-    alias <CR04> = <SPCE>;
-    alias <CR05> = <RALT>;
-    alias <CR06> = <RCTL>;
-};
-
-xkb_keycodes "arrows" {
-    alias <AK01> = <UP>;
-    alias <AK02> = <LEFT>;
-    alias <AK03> = <DOWN>;
-    alias <AK04> = <RGHT>;
-};
-
-include "nav" {
-    alias <NV01> = <INS>;
-    alias <NV02> = <HOME>;
-    alias <NV03> = <PGUP>;
-    alias <NV04> = <DELE>;
-    alias <NV05> = <END>;
-    alias <NV06> = <PGDN>;
-};
-
-include "keypad" {
-    alias <NP01> = <NMLK>;
-    alias <NP02> = <KPDV>;
-    alias <NP03> = <KPMU>;
-    alias <NP04> = <KPSU>;
-    alias <NP05> = <KPAD>;
-    alias <NP06> = <KPEN>;
-    alias <NP07> = <KP7>;
-    alias <NP08> = <KP8>;
-    alias <NP09> = <KP9>;
-    alias <NP10> = <KP4>;
-    alias <NP11> = <KP5>;
-    alias <NP12> = <KP6>;
-    alias <NP13> = <KP1>;
-    alias <NP14> = <KP2>;
-    alias <NP15> = <KP3>;
-    alias <NP16> = <KP0>;
-    alias <NP17> = <KPDL>;
 };  // vim:ft=c
