@@ -1,7 +1,5 @@
-default xkb_keycodes "xev_logitech_mk235" {
-    minimum = 8;
-    maximum = 255;
-
+default
+xkb_keycodes "logitech_mk235" {
     // Function Row
     alias <FR01> = <ESC>;
     alias <FR02> = <FK01>;
@@ -145,4 +143,129 @@ default xkb_keycodes "xev_logitech_mk235" {
     alias <UN05> = <BRI->;
     alias <UN06> = <BRI+>;
     alias <UN07> = <AIRP>;
+};
+
+xkb_keycodes "lenovo_yoga" {
+    // Function Row
+    alias <FR01> = <ESC>;
+    alias <FR02> = <FK01>;
+    alias <FR03> = <FK02>;
+    alias <FR04> = <FK03>;
+    alias <FR05> = <FK04>;
+    alias <FR06> = <FK05>;
+    alias <FR07> = <FK06>;
+    alias <FR08> = <FK07>;
+    alias <FR09> = <FK08>;
+    alias <FR10> = <FK09>;
+    alias <FR11> = <FK10>;
+    alias <FR12> = <FK11>;
+    alias <FR13> = <FK12>;
+    alias <FR14> = <PRSC>;
+    alias <FR15> = <INS>;
+    alias <FR16> = <DELE>;
+
+    // Number Row
+    alias <NR01> = <TLDE>;
+    alias <NR02> = <NUM1>;
+    alias <NR03> = <NUM2>;
+    alias <NR04> = <NUM3>;
+    alias <NR05> = <NUM4>;
+    alias <NR06> = <NUM5>;
+    alias <NR07> = <NUM6>;
+    alias <NR08> = <NUM7>;
+    alias <NR09> = <NUM8>;
+    alias <NR10> = <NUM9>;
+    alias <NR11> = <NUM0>;
+    alias <NR12> = <MINS>;
+    alias <NR13> = <EQUL>;
+    alias <NR14> = <BKSP>;
+
+    // Top Row
+    alias <TR01> = <TAB>;
+    alias <TR02> = <AL01>;
+    alias <TR03> = <AL02>;
+    alias <TR04> = <AL03>;
+    alias <TR05> = <AL04>;
+    alias <TR06> = <AL05>;
+    alias <TR07> = <AL06>;
+    alias <TR08> = <AL07>;
+    alias <TR09> = <AL08>;
+    alias <TR10> = <AL09>;
+    alias <TR11> = <AL10>;
+    alias <TR12> = <BRLF>;
+    alias <TR13> = <BRRT>;
+    alias <TR14> = <BKSL>;
+
+    // Home Row
+    alias <HR01> = <CAPS>;
+    alias <HR02> = <AL11>;
+    alias <HR03> = <AL12>;
+    alias <HR04> = <AL13>;
+    alias <HR05> = <AL14>;
+    alias <HR06> = <AL15>;
+    alias <HR07> = <AL16>;
+    alias <HR08> = <AL17>;
+    alias <HR09> = <AL18>;
+    alias <HR10> = <AL19>;
+    alias <HR11> = <SEMC>;
+    alias <HR12> = <APOS>;
+    alias <HR13> = <RTRN>;
+
+    // Bottom Row
+    alias <BR01> = <RTSH>;
+    alias <BR02> = <AL20>;
+    alias <BR03> = <AL21>;
+    alias <BR04> = <AL22>;
+    alias <BR05> = <AL23>;
+    alias <BR06> = <AL24>;
+    alias <BR07> = <AL25>;
+    alias <BR08> = <AL26>;
+    alias <BR09> = <COMA>;
+    alias <BR10> = <STOP>;
+    alias <BR11> = <SLSH>;
+    alias <BR12> = <LFSH>;
+
+    // Control Row
+    alias <CR01> = <LCTL>;
+    alias <CR02> = <SUPR>;
+    alias <CR03> = <LALT>;
+    alias <CR04> = <SPCE>;
+    alias <CR05> = <RALT>;
+    alias <CR06> = <RCTL>;
+
+    // Arrow Keys
+    alias <AK01> = <UPAR>;  // Up
+    alias <AK02> = <LFAR>;  // Left
+    alias <AK03> = <DNAR>;  // Down
+    alias <AK04> = <RTAR>;  // Right
+
+    // Fn layer
+    alias <FL01> = <MUTE>;  // F1
+    alias <FL02> = <VOL->;  // F2
+    alias <FL03> = <VOL+>;  // F3
+    alias <FL04> = <MIC>;   // F4
+    alias <FL05> = <ETCH>;  // F6
+    alias <FL06> = <DTCH>;  // F6
+    alias <FL07> = <AIRP>;  // F7
+    alias <FL08> = <CAM>;   // F8
+    alias <FL09> = <BRI->;  // F11
+    alias <FL10> = <BRI+>;  // F12
+    alias <FL11> = <PGUP>;  // Up
+    alias <FL12> = <HOME>;  // Left
+    alias <FL13> = <END>;   // Down
+    alias <FL14> = <PGDN>;  // Right
+
+    // Undefined keycodes
+    alias <UN01> = <SCLK>;
+    alias <UN02> = <COMP>;
+    alias <UN03> = <PAUS>;
+    alias <UN04> = <MENU>;
+	alias <UN05> = <CALC>;
+	alias <UN06> = <MAIL>;
+	alias <UN07> = <NXSG>;
+	alias <UN08> = <PLSG>;
+	alias <UN09> = <PRSG>;
+	alias <UN10> = <CONF>;
+	alias <UN11> = <HMPG>;
+	alias <UN12> = <SRCH>;
 };  // vim:ft=c
