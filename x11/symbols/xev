@@ -65,4 +65,70 @@ xkb_symbols "dvorak" {
     key <BR08> { [            w,           W,  bracketright ] };
     key <BR09> { [            v,           V,    parenright ] };
     key <BR10> { [            z,           Z,           bar ] };
+};
+
+partial alphanumeric_keys
+xkb_symbols "arabic" {
+    name[group1] = "Custom Arabic";
+
+    // Keyboard specific options are stored in xev_includes
+
+    // Num Row
+    key.type = "ONE_LEVEL";
+    key <NR01> { [   voidSymbol ] };
+    key <NR02> { [   voidSymbol ] };
+    key <NR03> { [   voidSymbol ] };
+    key <NR04> { [   voidSymbol ] };
+    key <NR05> { [   voidSymbol ] };
+    key <NR06> { [   voidSymbol ] };
+    key <NR07> { [   voidSymbol ] };
+    key <NR08> { [   voidSymbol ] };
+    key <NR09> { [   voidSymbol ] };
+    key <NR10> { [   voidSymbol ] };
+    key <NR11> { [   voidSymbol ] };
+    key <NR12> { [   voidSymbol ] };
+    key <NR13> { [   voidSymbol ] };
+    key <NR14> { [   voidSymbol ] };
+
+    // Top Row
+    key.type = "THREE_LEVEL";
+    key <TR01> { [         Arabic_dad,    Arabic_hamzaonalef,      asterisk ] };
+    key <TR02> { [         Arabic_sad,          Arabic_fatha,      Arabic_1 ] };
+    key <TR03> { [        Arabic_theh,          Arabic_damma,      Arabic_2 ] };
+    key <TR04> { [         Arabic_qaf,          Arabic_kasra,      Arabic_3 ] };
+    key <TR05> { [         Arabic_feh,          Arabic_sukun,          plus ] };
+    key <TR06> { [       Arabic_ghain,              quotedbl,          less ] };
+    key <TR07> { [         Arabic_ain,    Arabic_hamza_above,     braceleft ] };
+    key <TR08> { [          Arabic_ha,    Arabic_madda_above,   bracketleft ] };
+    key <TR09> { [        Arabic_khah,            VoidSymbol,     parenleft ] };
+    key <TR10> { [         Arabic_hah,            VoidSymbol,     ampersand ] };
+    key <TR11> { [        Arabic_jeem,              question,     semicolon ] };
+    key <TR12> { [         Arabic_dal,                exclam,    underscore ] };
+
+    // Home Row
+    key.type = "THREE_LEVEL";
+    key <HR01> { [       Arabic_sheen,        Arabic_percent,      Arabic_0 ] };
+    key <HR02> { [        Arabic_seen,      Arabic_semicolon,      Arabic_4 ] };
+    key <HR03> { [         Arabic_yeh,          Arabic_comma,      Arabic_5 ] };
+    key <HR04> { [         Arabic_beh,       Arabic_fullstop,      Arabic_6 ] };
+    key <HR05> { [         Arabic_lam,  Arabic_question_mark,        period ] };
+    key <HR06> { [        Arabic_alef,            VoidSymbol,         equal ] };
+    key <HR07> { [         Arabic_teh,            VoidSymbol,    asciitilde ] };
+    key <HR08> { [        Arabic_noon,            VoidSymbol,        dollar ] };
+    key <HR09> { [        Arabic_meem,            VoidSymbol,       percent ] };
+    key <HR10> { [         Arabic_kaf,            VoidSymbol,    numbersign ] };
+    key <HR11> { [         Arabic_tah,            VoidSymbol,         comma ] };
+
+    // Bottom Row
+    key.type = "THREE_LEVEL";
+    key <BR01> { [  Arabic_hamzaonyeh, Arabic_hamzaunderalef,         slash ] };
+    key <BR02> { [       Arabic_hamza,       Arabic_fathatan,      Arabic_7 ] };
+    key <BR03> { [  Arabic_hamzaonwaw,       Arabic_dammatan,      Arabic_8 ] };
+    key <BR04> { [          Arabic_ra,       Arabic_kasratan,      Arabic_9 ] };
+    key <BR05> { [        Arabic_thal,         Arabic_shadda,         minus ] };
+    key <BR06> { [ Arabic_alefmaksura,            apostrophe,       greater ] };
+    key <BR07> { [  Arabic_tehmarbuta,    Arabic_hamza_below,    braceright ] };
+    key <BR08> { [         Arabic_waw,    Arabic_maddaonalef,  bracketright ] };
+    key <BR09> { [        Arabic_zain,            VoidSymbol,    parenright ] };
+    key <BR10> { [         Arabic_zah,            VoidSymbol,           bar ] };
 }; // vim:ft=c
