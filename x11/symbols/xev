@@ -26,44 +26,43 @@ xkb_symbols "dvorak" {
 
     // Top Row
     key.type = "THREE_LEVEL";
-    key <TR02> { [    semicolon,       comma,      asterisk ] };
-    key <TR03> { [   apostrophe,    quotedbl,             1 ] };
-    key <TR04> { [        grave, asciicircum,             2 ] };
-    key <TR05> { [            p,           P,             3 ] };
-    key <TR06> { [            y,           Y,          plus ] };
-    key <TR07> { [            f,           F,          less ] };
-    key <TR08> { [            g,           G,     braceleft ] };
-    key <TR09> { [            c,           C,   bracketleft ] };
-    key <TR10> { [            r,           R,     parenleft ] };
-    key <TR11> { [            l,           L,     ampersand ] };
-    key <TR12> { [        slash,    question,     semicolon ] };
-    key <TR13> { [    backslash,      exclam,    underscore ] };
+    key <TR01> { [    semicolon,       comma,      asterisk ] };
+    key <TR02> { [   apostrophe,    quotedbl,             1 ] };
+    key <TR03> { [        grave, asciicircum,             2 ] };
+    key <TR04> { [            p,           P,             3 ] };
+    key <TR05> { [            y,           Y,          plus ] };
+    key <TR06> { [            f,           F,          less ] };
+    key <TR07> { [            g,           G,     braceleft ] };
+    key <TR08> { [            c,           C,   bracketleft ] };
+    key <TR09> { [            r,           R,     parenleft ] };
+    key <TR10> { [            l,           L,     ampersand ] };
+    key <TR11> { [        slash,    question,     semicolon ] };
+    key <TR12> { [    backslash,      exclam,    underscore ] };
 
     // Home Row
     key.type = "THREE_LEVEL";
-    key <HR02> { [            a,           A,             0 ] };
-    key <HR03> { [            o,           O,             4 ] };
-    key <HR04> { [            e,           E,             5 ] };
-    key <HR05> { [            u,           U,             6 ] };
-    key <HR06> { [            i,           I,        period ] };
-    key <HR07> { [            d,           D,         equal ] };
-    key <HR08> { [            h,           H,    asciitilde ] };
-    key <HR09> { [            t,           T,        dollar ] };
-    key <HR10> { [            n,           N,       percent ] };
-    key <HR11> { [            s,           S,    numbersign ] };
-    key <HR12> { [   underscore,       minus,         comma ] };
+    key <HR01> { [            a,           A,             0 ] };
+    key <HR02> { [            o,           O,             4 ] };
+    key <HR03> { [            e,           E,             5 ] };
+    key <HR04> { [            u,           U,             6 ] };
+    key <HR05> { [            i,           I,        period ] };
+    key <HR06> { [            d,           D,         equal ] };
+    key <HR07> { [            h,           H,    asciitilde ] };
+    key <HR08> { [            t,           T,        dollar ] };
+    key <HR09> { [            n,           N,       percent ] };
+    key <HR10> { [            s,           S,    numbersign ] };
+    key <HR11> { [   underscore,       minus,         comma ] };
 
     // Bottom Row
     key.type = "THREE_LEVEL";
-    key <BR02> { [        colon,      period,         slash ] };
-    key <BR03> { [            q,           Q,             7 ] };
-    key <BR04> { [            j,           J,             8 ] };
-    key <BR05> { [            k,           K,             9 ] };
-    key <BR06> { [            x,           X,         minus ] };
-    key <BR07> { [            b,           B,       greater ] };
-    key <BR08> { [            m,           M,    braceright ] };
-    key <BR09> { [            w,           W,  bracketright ] };
-    key <BR10> { [            v,           V,    parenright ] };
-    key <BR11> { [            z,           Z,         colon ] };
-
+    key <BR01> { [        colon,      period,         slash ] };
+    key <BR02> { [            q,           Q,             7 ] };
+    key <BR03> { [            j,           J,             8 ] };
+    key <BR04> { [            k,           K,             9 ] };
+    key <BR05> { [            x,           X,         minus ] };
+    key <BR06> { [            b,           B,       greater ] };
+    key <BR07> { [            m,           M,    braceright ] };
+    key <BR08> { [            w,           W,  bracketright ] };
+    key <BR09> { [            v,           V,    parenright ] };
+    key <BR10> { [            z,           Z,         colon ] };
 }; // vim:ft=c
