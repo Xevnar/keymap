@@ -1,4 +1,12 @@
 default
+xkb_keycodes "base" {
+    include "xev_includes(number)"
+    include "xev_includes(top)"
+    include "xev_includes(home)"
+    include "xev_includes(bottom)"
+    include "xev_includes(auxiliary)"
+};
+
 xkb_keycodes "function" {
     alias <FR01> = <ESC>;
     alias <FR02> = <FK01>;
@@ -33,58 +41,64 @@ xkb_keycodes "number" {
 };
 
 xkb_keycodes "top" {
-    alias <TR01> = <TAB>;
-    alias <TR02> = <AD01>;
-    alias <TR03> = <AD02>;
-    alias <TR04> = <AD03>;
-    alias <TR05> = <AD04>;
-    alias <TR06> = <AD05>;
-    alias <TR07> = <AD06>;
-    alias <TR08> = <AD07>;
-    alias <TR09> = <AD08>;
-    alias <TR10> = <AD09>;
-    alias <TR11> = <AD10>;
-    alias <TR12> = <AD11>;
-    alias <TR13> = <AD12>;
+    alias <TR01> = <AD01>;
+    alias <TR02> = <AD02>;
+    alias <TR03> = <AD03>;
+    alias <TR04> = <AD04>;
+    alias <TR05> = <AD05>;
+    alias <TR06> = <AD06>;
+    alias <TR07> = <AD07>;
+    alias <TR08> = <AD08>;
+    alias <TR09> = <AD09>;
+    alias <TR10> = <AD10>;
+    alias <TR11> = <AD11>;
+    alias <TR12> = <AD12>;
 };
 
 xkb_keycodes "home" {
-    alias <HR01> = <CAPS>;
-    alias <HR02> = <AC01>;
-    alias <HR03> = <AC02>;
-    alias <HR04> = <AC03>;
-    alias <HR05> = <AC04>;
-    alias <HR06> = <AC05>;
-    alias <HR07> = <AC06>;
-    alias <HR08> = <AC07>;
-    alias <HR09> = <AC08>;
-    alias <HR10> = <AC09>;
-    alias <HR11> = <AC10>;
-    alias <HR12> = <AC11>;
+    alias <HR01> = <AC01>;
+    alias <HR02> = <AC02>;
+    alias <HR03> = <AC03>;
+    alias <HR04> = <AC04>;
+    alias <HR05> = <AC05>;
+    alias <HR06> = <AC06>;
+    alias <HR07> = <AC07>;
+    alias <HR08> = <AC08>;
+    alias <HR09> = <AC09>;
+    alias <HR10> = <AC10>;
+    alias <HR11> = <AC11>;
 };
 
 xkb_keycodes "bottom" {
-    alias <BR01> = <LFSH>;
-    alias <BR02> = <AB01>;
-    alias <BR03> = <AB02>;
-    alias <BR04> = <AB03>;
-    alias <BR05> = <AB04>;
-    alias <BR06> = <AB05>;
-    alias <BR07> = <AB06>;
-    alias <BR08> = <AB07>;
-    alias <BR09> = <AB08>;
-    alias <BR10> = <AB09>;
-    alias <BR11> = <AB10>;
-    alias <BR12> = <RTSH>;
+    alias <BR01> = <AB01>;
+    alias <BR02> = <AB02>;
+    alias <BR03> = <AB03>;
+    alias <BR04> = <AB04>;
+    alias <BR05> = <AB05>;
+    alias <BR06> = <AB06>;
+    alias <BR07> = <AB07>;
+    alias <BR08> = <AB08>;
+    alias <BR09> = <AB09>;
+    alias <BR10> = <AB10>;
 };
 
-xkb_keycodes "control" {
-    alias <CR01> = <LCTL>;
-    alias <CR02> = <LWIN>;
-    alias <CR03> = <LALT>;
-    alias <CR04> = <SPCE>;
-    alias <CR05> = <RALT>;
-    alias <CR06> = <RCTL>;
+xkb_keycodes "auxiliary" {
+    // Modifiers
+    alias <AX00> = <LSGT>;
+    alias <AX01> = <LFSH>;
+    alias <AX02> = <RTSH>;
+    alias <AX03> = <LCTL>;
+    alias <AX04> = <RCTL>;
+    alias <AX05> = <LALT>;
+    alias <AX06> = <RALT>;
+    alias <AX07> = <LWIN>;
+
+    // Normal keys
+    alias <AX08> = <RTRN>;
+    alias <AX09> = <BKSL>;
+    alias <AX10> = <SPCE>;
+    alias <AX11> = <TAB>;
+    alias <AX12> = <CAPS>;
 };
 
 xkb_keycodes "arrows" {

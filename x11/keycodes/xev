@@ -1,25 +1,10 @@
 default
 xkb_keycodes "logi" {
+    // Base keyboard
+    include "xev_includes(base)"
+
     // Function Row
     include "xev_includes(function)"
-
-    // Number Row
-    include "xev_includes(number)"
-
-    // Top Row
-    include "xev_includes(top)"
-
-    // Home Row
-    include "xev_includes(home)"
-    alias <HR13> = <BKSL>;
-    alias <HR14> = <RTRN>;
-
-    // Bottom Row
-    alias <BR00> = <LSGT>;
-    include "xev_includes(bottom)"
-
-    // Control Row
-    include "xev_includes(control)"
 
     // Arrow Keys
     include "xev_includes(arrows)"
@@ -45,32 +30,18 @@ xkb_keycodes "logi" {
     alias <FL12> = <PRSC>;  // F12
     alias <FL13> = <SCLK>;  // INS
     alias <FL14> = <PAUS>;  // DELE
-    alias <FL15> = <MENU>;  // RCTL
+    alias <FL15> = <COMP>;  // RCTL
 };
 
 xkb_keycodes "yoga" {
+    // Base keyboard
+    include "xev_includes(base)"
+
     // Function Row
     include "xev_includes(function)"
     alias <FR14> = <PRSC>;
     alias <FR15> = <INS>;
     alias <FR16> = <DELE>;
-
-    // Number Row
-    include "xev_includes(number)"
-
-    // Top Row
-    include "xev_includes(top)"
-    alias <TR14> = <BKSL>;
-
-    // Home Row
-    include "xev_includes(home)"
-    alias <HR13> = <RTRN>;
-
-    // Bottom Row
-    include "xev_includes(bottom)"
-
-    // Control Row
-    include "xev_includes(control)"
 
     // Arrow Keys
     include "xev_includes(arrows)"
