@@ -119,8 +119,7 @@ xkb_symbols "auxiliary" {
     key <AX09> { [           at ] };
     key <AX10> { [        space ] };
     key <AX11> { [          Tab ] };
-    key.type = "THREE_LEVEL";
-    key <AX12> { [    BackSpace,      Delete,     BackSpace ] };
+    key <AX12> { [    BackSpace ] };
 
 };
 
