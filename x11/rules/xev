@@ -1,19 +1,23 @@
 ! model           = keycodes
-  logitech_mk235  = xev_basic+xev_numpad+xev_logitech_mk235
-  lenovo_yoga     = xev_basic+xev_lenovo_yoga
-  *               = evdev+aliases(qwerty)
+  *               = evdev
+  logitech_mk235  = xev(logi)
+  lenovo_yoga     = xev(yoga)
 
 ! model           = types
-  logitech_mk235  = xev_complete
-  lenovo_yoga     = xev_complete
-  *               = complete
+  *               = xev_complete
 
 ! model           = compat
-  logitech_mk235  = xev_compat
-  lenovo_yoga     = xev_compat
-  *               = complete
+  *               = xev_complete
 
-! model = symbols
-  logitech_mk235  = xev(logitech_mk235)
-  lenovo_yoga     = xev(lenovo_yoga)
+! model           = symbols
   *               = %l%(v)
+  logitech_mk235  = +xev_includes(logi)
+  lenovo_yoga     = +xev_includes(yoga)
+
+
+! layouts         = keycodes
+  xev             = +xev
+  *               = %l%(v)
+
+! layouts         = options
+  xev             = xev_complete
