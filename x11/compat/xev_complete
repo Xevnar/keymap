@@ -2,7 +2,6 @@ default xkb_compatibility "complete" {
     include "basic"
 
     include "xev_latches"
-    include "xev_server"
 
     augment "xfree86"
     augment "misc"
