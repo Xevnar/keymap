@@ -64,5 +64,5 @@ xkb_symbols "dvorak" {
     key <BR07> { [            m,           M,    braceright ] };
     key <BR08> { [            w,           W,  bracketright ] };
     key <BR09> { [            v,           V,    parenright ] };
-    key <BR10> { [            z,           Z,         colon ] };
+    key <BR10> { [            z,           Z,           bar ] };
 }; // vim:ft=c
