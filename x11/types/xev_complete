@@ -1,17 +1,11 @@
-default
-xkb_types "xev_complete" {
-    type "ONE_LEVEL" {
-	    modifiers = None;
-	    map[None] = Level1;
-	    level_name[Level1]= "Any";
-    };
-
-    type "TWO_LEVEL" {
-        modifiers= Shift;
-        map[Shift]= Level2;
-        level_name[Level1]= "Base";
-        level_name[Level2]= "Shift";
-    };
+default xkb_types "xev_complete" {
+    include "basic"
+    include "mousekeys"
+    include "pc"
+    include "iso9995"
+    include "level5"
+    include "extra"
+    include "numpad"
 
     type "THREE_LEVEL" {
         modifiers= Shift+Mod3;
@@ -33,15 +27,5 @@ xkb_types "xev_complete" {
         level_name[Level2]= "Shift";
         level_name[Level3]= "Num";
         level_name[Level4]= "X";
-    };
-
-    // MUST NOT BE REMOVED
-    type "ALPHABETIC" {
-        modifiers = None;
-        level_name[Level1] = "Any";
-    };
-    type "KEYPAD" {
-        modifiers= Node;
-        level_name[Level1] = "Any";
     };
 };  // vim:ft=c
