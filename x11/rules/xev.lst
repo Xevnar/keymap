@@ -294,7 +294,7 @@
   id              Indonesian (Arab Melayu, phonetic)
   jv              Indonesian (Javanese)
   my              Malay (Jawi, Arabic Keyboard)
-  xev             My custom dvorak layout
+  xev             My custom layouts
 
 ! variant
   chr             us: Cherokee
@@ -775,8 +775,8 @@
   gag             md: Moldavian (Gagauz)
   phoneticx       id: Indonesian (Arab Melayu, extended phonetic)
   phonetic        my: Malay (Jawi, phonetic)
-  logitech_mk235  xev: Custom Dvorak (Desktop)
-  lenovo_yoga     xev: Custom Dvorak (Laptop)
+  dvorak          xev: Custom Dvorak
+  arabic          xev: Custom Arabic
 
 ! option
   grp                  Switching to another layout

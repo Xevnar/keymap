@@ -6440,14 +6440,14 @@
       <configItem>
         <name>xev</name>
         <!-- Keyboard indicator for My custom layouts -->
-        <shortDescription>logitech_mk235</shortDescription>
-        <description>Custom Dvorak (Desktop)</description>
+        <shortDescription>dvorak</shortDescription>
+        <description>Custom Dvorak</description>
       </configItem>
       <variantList>
         <variant>
           <configItem>
-            <name>lenovo_yoga</name>
-            <description>Custom Dvorak (Laptop)</description>
+            <name>arabic</name>
+            <description>Custom Arabic</description>
           </configItem>
         </variant>
       </variantList>
